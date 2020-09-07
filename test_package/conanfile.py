@@ -30,7 +30,7 @@ class TestPackageConan(ConanFile):
             test_images = []
             if self.options["opencv"].jpeg:
                 test_images.append('lena.jpg')
-            if self.options["opencv"].libtiff != False:
+            if self.options["opencv"].tiff != False:
                 test_images.append('normal.tiff')
                 if self.options["libtiff"].lzma != False:
                     test_images.append('lzma.tiff')
